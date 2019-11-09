@@ -57,7 +57,7 @@ static NSString *const PLATFORM_CHANNEL = @"PonnamKarthik/flutter_youtube";
         NSDictionary *streamURLs = video.streamURLs;
         NSURL *streamURL = streamURLs[XCDYouTubeVideoQualityHTTPLiveStreaming] ?: streamURLs[@(XCDYouTubeVideoQualityMedium360)] ?: streamURLs[@(XCDYouTubeVideoQualitySmall240)];
         weakPlayerViewController.player = [AVPlayer playerWithURL:streamURL];
-        [weakPlayerViewController.player play];
+        //[weakPlayerViewController.player play];
     }
     else
     {
